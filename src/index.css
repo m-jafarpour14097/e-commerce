@@ -1,13 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Noto+Sans&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+  background-image: url('./assets/images/BG.jpg');
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.pic{
+  max-width: 100% ;
+  height: 500px;  
+}
+
+.services{
+  position: relative;
+  top: 0;
+  transition: top ease 0.25s;
+}
+.services:hover {
+  top: -5px;
+}
+/* contact */
+.col-md-3{
+  background: #ff9b00;
+		padding: 4%;
+		border-top-left-radius: 0.5rem;
+		border-bottom-left-radius: 0.5rem;
+}
+.contact-info{
+  margin-top:10%;
+}
+.contact-info img{
+  margin-bottom: 15%;
+}
+.contact-info h1{
+  margin-bottom: 10%;
+}
+.col-md-9{
+  background: #fff;
+  padding: 3%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.contact-form label{
+  font-weight:600;
+}
+.contact-form button{
+  background: #25274d;
+  color: #fff;
+  font-weight: 600;
+  width: 25%;
+}
+.contact-form button:focus{
+  box-shadow:none;
+}
+.footer{
+  height: 50px;
+  width: 100%;
+  margin-top:30px
 }
